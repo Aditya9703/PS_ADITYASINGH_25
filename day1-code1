@@ -1,17 +1,13 @@
 #include<stdio.h>
 int main()
 {
-int x,y;
-scanf("%d %d",&x,&y);
-if(x>0 && y>0)
-{printf("first");
+int x;
+scanf("%d",&x);
+if(x%2==0)
+{printf("even");
 }
-else if(x<0 && y<0)
+else
 {
-printf("third");
-}
-else if(x<0 && y>0)
-{
- printf("second") ;
+printf("odd");
 }
 }
