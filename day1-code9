@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+float n;
+
+char ch;
+int hra;
+int da;
+float allow;
+int pf;
+printf("Enter basic salary and grade");
+scanf("%f %c",&n,&ch);
+
+hra=(20/100)*n;
+da=(50/100)*n;
+pf=(11/100)*n;
+if(ch=='A')
+allow=1700;
+else if(ch=='B')
+allow=1500;
+else
+allow=1300;
+int t=n+hra+da+allow-pf;
+printf("total salary is %d",t);
+return 0;
+}
